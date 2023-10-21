@@ -14,6 +14,7 @@ export const BoxContent = styled(FlexComponent)<BorderType>`
     height: 100%;
     padding: ${padding};
     color: ${theme.colors.gray[200]};
+    border: 1px solid transparent;
 
     svg {
       font-size: inherit;

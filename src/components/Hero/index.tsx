@@ -1,12 +1,6 @@
 import Image from 'next/image';
-import {
-  GithubLogo,
-  InstagramLogo,
-  LinkedinLogo,
-  TwitterLogo
-} from 'phosphor-react';
 
-import { Box, Flex } from '@/components';
+import { Box, Flex, SocialIcons } from '@/components';
 
 import * as S from './styles';
 
@@ -98,48 +92,7 @@ const Hero = () => {
           Node
         </Box>
 
-        <S.HeroSocialWrapper>
-          <Box
-            splitChildren={<InstagramLogo size={24} />}
-            contentAlign="center"
-            justifySplit="center"
-            area="in"
-            borderbat="top"
-            borderlar="left"
-          >
-            <InstagramLogo size={24} />
-          </Box>
-          <Box
-            splitChildren={<LinkedinLogo size={24} />}
-            contentAlign="center"
-            justifySplit="center"
-            area="lk"
-            borderbat="top"
-            borderlar="left"
-          >
-            <LinkedinLogo size={24} />
-          </Box>
-          <Box
-            splitChildren={<GithubLogo size={24} />}
-            contentAlign="center"
-            justifySplit="center"
-            area="gh"
-            borderbat="top"
-            borderlar="left"
-          >
-            <GithubLogo size={24} />
-          </Box>
-          <Box
-            splitChildren={<TwitterLogo size={24} />}
-            contentAlign="center"
-            justifySplit="center"
-            area="tw"
-            borderbat="top"
-            borderlar="left"
-          >
-            <TwitterLogo size={24} />
-          </Box>
-        </S.HeroSocialWrapper>
+        <SocialIcons />
       </S.LastColumn>
     </S.HeroContent>
   );
