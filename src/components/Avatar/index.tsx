@@ -3,7 +3,7 @@ import * as S from './styles';
 
 const Avatar = () => {
   return (
-    <S.AvatarContent>
+    <S.AvatarContent aria-label="Foto em tons de cinza de Daniel Silva">
       <S.Picture>
         <Image
           src="/images/hero/hero.webp"
