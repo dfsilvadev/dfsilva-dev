@@ -1,12 +1,12 @@
 'use client';
 
-import { Hero, Text } from '@/components';
+import { Avatar, Hero } from '@/components';
 
 export default function Home() {
   return (
     <main>
       <Hero />
-      <Text as="div">Next Boilerplate</Text>
+      <Avatar />
     </main>
   );
 }
