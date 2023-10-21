@@ -27,7 +27,7 @@ const defaultTheme = {
       large: '1.8rem',
       xlarge: '2.4rem',
       xxlarge: '4.8rem',
-      huge: '9rem'
+      huge: '0.56em'
     }
   },
   colors: {
