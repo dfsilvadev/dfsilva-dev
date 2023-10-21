@@ -52,6 +52,7 @@ const Split = ({ children, splitChildren, ...props }: ISplitProps) => {
       ctx.current && ctx.current.revert();
     };
   }, []);
+
   return (
     <S.SplitWrapper
       {...props}
