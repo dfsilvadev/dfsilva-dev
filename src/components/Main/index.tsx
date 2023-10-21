@@ -1,11 +1,13 @@
-import { Flex, Split } from '@/components';
+import { Box, Flex } from '@/components';
 
 import * as S from './styles';
 
 const Main = () => (
   <S.MainContent>
     <Flex>
-      <Split splitChildren="Boilerplate">Next</Split>
+      <Box splitChildren="Boilerplate" borderbat="tpb" borderlar="lfr">
+        Next
+      </Box>
     </Flex>
   </S.MainContent>
 );
