@@ -1,11 +1,13 @@
 import Image from 'next/image';
 
+import { Flex } from '@/components';
+
 import * as S from './styles';
 
 const Main = () => (
   <S.MainContent>
     <h1>Boilerplate</h1>
-    <div>
+    <Flex>
       <Image
         src="/next.svg"
         alt="Next.js Logo"
@@ -13,7 +15,7 @@ const Main = () => (
         height={37}
         priority
       />
-    </div>
+    </Flex>
   </S.MainContent>
 );
 

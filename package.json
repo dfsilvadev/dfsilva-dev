@@ -10,7 +10,8 @@
     "test:ci": "jest --runInBand",
     "start": "next start",
     "lint": "next lint",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "generate:component": "yarn plop --plopfile generators/plopfile.js"
   },
   "dependencies": {
     "@types/node": "20.6.1",
@@ -43,6 +44,7 @@
     "jest-environment-jsdom": "^29.7.0",
     "jest-styled-components": "^7.1.1",
     "lint-staged": "^14.0.1",
+    "plop": "^4.0.0",
     "prettier": "^3.0.3"
   }
 }
