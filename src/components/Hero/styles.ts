@@ -1,7 +1,8 @@
 'use client';
 
 import styled, { css } from 'styled-components';
-import { FlexComponent } from '../Flex';
+
+import { FlexComponent } from '@/components/Flex';
 
 export const HeroContent = styled.section`
   ${({ theme }) => css`
