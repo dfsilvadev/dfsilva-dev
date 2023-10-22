@@ -8,6 +8,7 @@ export const TextContent = styled.p<TextContentStyleProps>`
   ${({ theme, size, weight, color }) => css`
     font-size: ${size};
     font-weight: ${weight};
+    line-height: 1;
 
     ${!!color && textColorVariant[color](theme)}
   `}

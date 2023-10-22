@@ -14,4 +14,5 @@ export const Picture = styled.div`
   border: 1px solid #000;
   position: absolute;
   bottom: -20px;
+  left: -1px;
 `;

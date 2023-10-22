@@ -11,7 +11,6 @@ import { BorderType } from './types';
 export const BoxContent = styled(FlexComponent)<BorderType>`
   ${({ theme, borderbat, borderlar, padding }) => css`
     width: 100%;
-    height: 100%;
     padding: ${padding};
     color: ${theme.colors.gray[200]};
     border: 1px solid transparent;
@@ -41,7 +40,8 @@ const borderTopAndBottomVariant = {
     border-bottom: 1px solid ${theme.colors.gray[100]};
   `,
   none: () => css`
-    border: none;
+    border-top: none;
+    border-bottom: none;
   `
 };
 
@@ -57,6 +57,7 @@ const borderLeftAndRightVariant = {
     border-right: 1px solid ${theme.colors.gray[100]};
   `,
   none: () => css`
-    border: none;
+    border-left: none;
+    border-right: none;
   `
 };
