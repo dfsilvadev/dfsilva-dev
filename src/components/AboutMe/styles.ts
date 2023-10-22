@@ -12,7 +12,7 @@ export const AboutMeContent = styled.section`
     border-bottom: 1px solid ${theme.colors.gray[100]};
 
     display: grid;
-    grid-template-rows: 0.5fr 2fr;
+    grid-template-rows: auto 2fr;
 
     @media (min-width: 992px) {
       grid-template-columns: 1fr 1.5fr;
