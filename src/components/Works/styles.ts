@@ -4,7 +4,7 @@ import styled, { css } from 'styled-components';
 
 import { FlexComponent } from '@/components/Flex';
 
-export const AboutMeContent = styled.section`
+export const WorksContent = styled.div`
   ${({ theme }) => css`
     width: 100vw;
     height: table;
@@ -21,7 +21,10 @@ export const AboutMeContent = styled.section`
 `;
 
 export const FirstColumn = styled(FlexComponent)`
+  max-height: 100vh;
   padding: 6rem 1.5rem;
+  position: sticky;
+  top: 0;
 
   @media (min-width: 992px) {
     padding: 6rem;
@@ -46,12 +49,4 @@ export const LastColumn = styled(FlexComponent)`
       border-left: 1px solid ${theme.colors.gray[100]};
     }
   `}
-`;
-
-export const AboutMeInfo = styled(FlexComponent)`
-  padding: 3.2rem 1.5rem;
-
-  @media (min-width: 992px) {
-    padding: 6rem;
-  }
 `;

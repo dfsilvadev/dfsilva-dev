@@ -7,3 +7,4 @@ export { default as SocialIcons } from './SocialIcons';
 export { default as Split } from './Split';
 export { default as Status } from './Status';
 export { default as Text } from './Text';
+export { default as Works } from './Works';
