@@ -39,7 +39,7 @@ const AboutMe = () => {
               Olá, meu nome é Daniel Silva e moro em São Paulo - SP. Meu
               trabalho gira em torno da criação de experiências interativas
               únicas com tecnologia baseada em navegador. Atualmente desenvolvo
-              em Next / React.
+              em <strong>Next / React</strong>.
             </Text>
 
             <Text as="p">
@@ -50,7 +50,7 @@ const AboutMe = () => {
 
             <Text as="p">
               Desenvolver tornou-se um hobby favorito e atualmente pratico esse
-              hobby no Grupo Boticário.
+              hobby no <strong>Grupo Boticário</strong>.
             </Text>
 
             <Text as="p">
