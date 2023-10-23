@@ -1,23 +1,51 @@
 'use client';
 
-import styled, { css } from 'styled-components';
+import styled, { css, DefaultTheme } from 'styled-components';
 
-export const SplitContent = styled.div`
-  width: fit-content;
-  height: 3rem;
-  overflow: hidden;
+import { SplitContentStyleProps } from './types';
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+export const SplitContent = styled.span.withConfig({
+  shouldForwardProp: (props) => !['contentsize'].includes(props)
+})<SplitContentStyleProps>`
+  ${({ theme, fontSize, contentsize, color, weight }) => css`
+    width: fit-content;
+    height: ${contentsize};
+    font-size: ${fontSize};
+    font-weight: ${weight};
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    ${!!color && splitContentTextColorVariant[color](theme)}
+  `}
 `;
 
 export const SplitChildren = styled.span`
-  ${({ theme }) => css`
-    padding: 0.5rem 0;
-    color: ${theme.colors.gray[200]};
-    font-size: ${theme.font.sizes.xlarge};
-    line-height: 1;
-  `}
+  padding: 0.5rem 0;
+  line-height: 1;
 `;
+
+const splitContentTextColorVariant = {
+  default: (theme: DefaultTheme) => css`
+    color: ${theme.colors.text.main};
+  `,
+
+  heading: (theme: DefaultTheme) => css`
+    color: ${theme.colors.text.heading};
+  `,
+
+  white: (theme: DefaultTheme) => css`
+    color: ${theme.colors.white};
+  `,
+
+  gray100: (theme: DefaultTheme) => css`
+    color: ${theme.colors.gray[100]};
+  `,
+
+  gray200: (theme: DefaultTheme) => css`
+    color: ${theme.colors.gray[200]};
+  `
+};

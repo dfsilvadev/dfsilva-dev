@@ -2,7 +2,7 @@ import { RefObject } from 'react';
 import gsap from 'gsap';
 
 export const splitElementAnimation = (
-  splitElementRef: RefObject<HTMLDivElement>
+  splitElementRef: RefObject<HTMLSpanElement>
 ) => {
   return gsap.context((self) => {
     const tl = gsap

@@ -22,7 +22,7 @@ export const AboutMeContent = styled.section`
 `;
 
 export const FirstColumn = styled(FlexComponent)`
-  padding: 3.2rem 1.5rem;
+  padding: 6rem 1.5rem;
 
   @media (min-width: 992px) {
     padding: 6rem;
@@ -31,14 +31,19 @@ export const FirstColumn = styled(FlexComponent)`
 
 export const LastColumn = styled(FlexComponent)`
   ${({ theme }) => css`
-    border-left: 1px solid transparent;
+    border-top: 1px solid ${theme.colors.gray[100]};
 
     a {
       display: inline-block;
       width: 100%;
     }
 
+    strong {
+      color: ${theme.colors.primary.main};
+    }
+
     @media (min-width: 992px) {
+      border-top: 1px solid transparent;
       border-left: 1px solid ${theme.colors.gray[100]};
     }
   `}
