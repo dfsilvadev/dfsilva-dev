@@ -2,7 +2,7 @@
 
 import styled, { css } from 'styled-components';
 
-export const SplitWrapper = styled.div`
+export const SplitContent = styled.div`
   width: fit-content;
   height: 3rem;
   overflow: hidden;

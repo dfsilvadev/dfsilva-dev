@@ -15,7 +15,7 @@ export const AboutMeContent = styled.section`
     grid-template-rows: auto 2fr;
 
     @media (min-width: 992px) {
-      grid-template-columns: 1fr 1.5fr;
+      grid-template-columns: 1fr 2fr;
       grid-template-rows: auto;
     }
   `}
@@ -32,6 +32,11 @@ export const FirstColumn = styled(FlexComponent)`
 export const LastColumn = styled(FlexComponent)`
   ${({ theme }) => css`
     border-left: 1px solid transparent;
+
+    a {
+      display: inline-block;
+      width: 100%;
+    }
 
     @media (min-width: 992px) {
       border-left: 1px solid ${theme.colors.gray[100]};
