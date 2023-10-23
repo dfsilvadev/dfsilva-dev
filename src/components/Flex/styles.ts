@@ -4,7 +4,9 @@ import styled, { css } from 'styled-components';
 
 import { FlexType } from './types';
 
-export const FlexContent = styled.div<FlexType>`
+export const FlexContent = styled.div.withConfig({
+  shouldForwardProp: (props) => !['align'].includes(props)
+})<FlexType>`
   ${({ display, direction, align, justify, content, wrap, gap }) => css`
     display: ${display};
     flex-direction: ${direction};

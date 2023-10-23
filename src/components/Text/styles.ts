@@ -4,7 +4,10 @@ import styled, { DefaultTheme, css } from 'styled-components';
 
 import { TextContentStyleProps } from './types';
 
-export const TextContent = styled.p<TextContentStyleProps>`
+export const TextContent = styled.p.withConfig({
+  shouldForwardProp: (props) =>
+    !['weight'].includes(props) || !['weight'].includes(props)
+})<TextContentStyleProps>`
   ${({ theme, size, weight, color }) => css`
     font-size: ${size};
     font-weight: ${weight};
