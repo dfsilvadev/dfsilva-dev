@@ -18,8 +18,8 @@ const SocialIcons = () => {
       <Link href={SOCIAL_URL.GITHUB} target="_blank" rel="noopener noreferrer">
         <Box
           splitChildren={<GithubLogo size={24} />}
-          contentAlign="center"
-          justifySplit="center"
+          verticalAlign="center"
+          horizontalAlign="center"
           area="gh"
           borderbat="top"
           borderlar="left"
@@ -35,8 +35,8 @@ const SocialIcons = () => {
       >
         <Box
           splitChildren={<InstagramLogo size={24} />}
-          contentAlign="center"
-          justifySplit="center"
+          verticalAlign="center"
+          horizontalAlign="center"
           area="in"
           borderbat="top"
           borderlar="left"
@@ -52,8 +52,8 @@ const SocialIcons = () => {
       >
         <Box
           splitChildren={<LinkedinLogo size={24} />}
-          contentAlign="center"
-          justifySplit="center"
+          verticalAlign="center"
+          horizontalAlign="center"
           area="lk"
           borderbat="top"
           borderlar="left"
@@ -65,8 +65,8 @@ const SocialIcons = () => {
       <Link href={SOCIAL_URL.TWITTER} target="_blank" rel="noopener noreferrer">
         <Box
           splitChildren={<TwitterLogo size={24} />}
-          contentAlign="center"
-          justifySplit="center"
+          verticalAlign="center"
+          horizontalAlign="center"
           area="tw"
           borderbat="top"
           borderlar="left"

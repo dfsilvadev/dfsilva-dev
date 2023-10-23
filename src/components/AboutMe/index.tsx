@@ -2,6 +2,8 @@ import { Avatar, Box, Flex, Status, Text } from '@/components/';
 
 import * as S from './styles';
 import { ChatCenteredDots } from 'phosphor-react';
+import Link from 'next/link';
+import { SOCIAL_URL } from '@/utils/common/constant';
 
 const AboutMe = () => {
   return (
@@ -37,7 +39,7 @@ const AboutMe = () => {
               Olá, meu nome é Daniel Silva e moro em São Paulo - SP. Meu
               trabalho gira em torno da criação de experiências interativas
               únicas com tecnologia baseada em navegador. Atualmente desenvolvo
-              em Next / React.
+              em <strong>Next / React</strong>.
             </Text>
 
             <Text as="p">
@@ -48,7 +50,7 @@ const AboutMe = () => {
 
             <Text as="p">
               Desenvolver tornou-se um hobby favorito e atualmente pratico esse
-              hobby no Grupo Boticário.
+              hobby no <strong>Grupo Boticário</strong>.
             </Text>
 
             <Text as="p">
@@ -57,14 +59,22 @@ const AboutMe = () => {
             </Text>
           </Flex>
         </S.AboutMeInfo>
-        <Box
-          splitChildren="Vamos Conversar?"
-          borderbat="top"
-          borderlar="none"
-          icon={<ChatCenteredDots size={24} />}
+
+        <Link
+          href={SOCIAL_URL.WHATSAPP}
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          Vamos Conversar?
-        </Box>
+          <Box
+            splitChildren="Vamos Conversar?"
+            verticalAlign="center"
+            borderbat="top"
+            borderlar="none"
+            icon={<ChatCenteredDots size={24} />}
+          >
+            Vamos Conversar?
+          </Box>
+        </Link>
       </S.LastColumn>
     </S.AboutMeContent>
   );

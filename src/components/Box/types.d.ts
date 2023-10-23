@@ -8,7 +8,7 @@ export interface IBoxProps extends BorderType {
   children: ReactNode;
   splitChildren: ReactNode;
   icon?: ReactNode;
-  contentAlign?: 'center' | 'flex-end';
-  justifySplit?: 'center' | 'space-between';
+  verticalAlign?: 'center' | 'flex-end';
+  horizontalAlign?: 'center' | 'space-between';
   area?: string;
 }

@@ -1,7 +1,8 @@
 import { useLayoutEffect, useRef } from 'react';
-import gsap from 'gsap';
 
 import * as S from './styles';
+
+import { splitElementAnimation } from './animation';
 
 import { ISplitProps } from './types';
 
@@ -22,31 +23,7 @@ const Split = ({ children, splitChildren, ...props }: ISplitProps) => {
   };
 
   useLayoutEffect(() => {
-    ctx.current = gsap.context((self) => {
-      const tl = gsap
-        .timeline({
-          paused: true,
-          defaults: {
-            ease: 'power1.inOut',
-            duration: 0.4
-          }
-        })
-        .to(
-          splitElementRef.current!.children,
-          {
-            yPercent: -100,
-            stagger: -0.05
-          },
-          0
-        );
-      self.add('onEnter', () => {
-        tl.play();
-      });
-
-      self.add('onLeave', () => {
-        tl.reverse();
-      });
-    });
+    ctx.current = splitElementAnimation(splitElementRef);
 
     return () => {
       ctx.current && ctx.current.revert();
@@ -54,7 +31,7 @@ const Split = ({ children, splitChildren, ...props }: ISplitProps) => {
   }, []);
 
   return (
-    <S.SplitWrapper
+    <S.SplitContent
       {...props}
       ref={splitElementRef}
       onMouseEnter={onEnter}
@@ -62,7 +39,7 @@ const Split = ({ children, splitChildren, ...props }: ISplitProps) => {
     >
       <S.SplitChildren>{children}</S.SplitChildren>
       <S.SplitChildren>{splitChildren}</S.SplitChildren>
-    </S.SplitWrapper>
+    </S.SplitContent>
   );
 };
 

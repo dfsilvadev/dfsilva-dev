@@ -4,7 +4,7 @@ import styled, { DefaultTheme, css } from 'styled-components';
 
 import { FlexComponent } from '@/components/Flex';
 
-import { SplitChildren, SplitWrapper } from '@/components/Split/styles';
+import { SplitChildren, SplitContent } from '@/components/Split/styles';
 
 import { BorderType } from './types';
 
@@ -24,7 +24,7 @@ export const BoxContent = styled(FlexComponent)<BorderType>`
   `}
 `;
 
-export const BoxSplitWrapper = styled(SplitWrapper)``;
+export const BoxSplitWrapper = styled(SplitContent)``;
 
 export const BoxSplitChildren = styled(SplitChildren)``;
 
