@@ -11,7 +11,7 @@ export const TextContent = styled.p.withConfig({
   ${({ theme, size, weight, color }) => css`
     font-size: ${size};
     font-weight: ${weight};
-    line-height: 1;
+    line-height: 1.2;
 
     ${!!color && textColorVariant[color](theme)}
   `}
