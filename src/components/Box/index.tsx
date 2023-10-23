@@ -11,8 +11,8 @@ const Box = ({
   children,
   splitChildren,
   icon,
-  contentAlign = 'flex-end',
-  justifySplit = 'space-between',
+  verticalAlign = 'flex-end',
+  horizontalAlign = 'space-between',
   area,
   padding = '3.2rem',
   borderbat = 'tpb',
@@ -44,7 +44,7 @@ const Box = ({
 
   return (
     <S.BoxContent
-      align={contentAlign}
+      align={verticalAlign}
       borderbat={borderbat}
       borderlar={borderlar}
       padding={padding}
@@ -57,7 +57,7 @@ const Box = ({
     >
       <Flex
         align="center"
-        justify={justifySplit}
+        justify={horizontalAlign}
         style={{
           width: '100%'
         }}
