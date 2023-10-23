@@ -4,10 +4,18 @@ import * as S from './styles';
 
 import { splitElementAnimation } from './animation';
 
-import { ISplitProps } from './types';
+import { SplitPropsTypes } from './types';
 
-const Split = ({ children, splitChildren, ...props }: ISplitProps) => {
-  const splitElementRef = useRef<HTMLDivElement>(null);
+const Split = ({
+  children,
+  splitChildren,
+  fontSize = '2.4rem',
+  contentsize = '3rem',
+  color = 'gray200',
+  weight = 300,
+  ...props
+}: SplitPropsTypes) => {
+  const splitElementRef = useRef<HTMLSpanElement>(null);
   const ctx = useRef<gsap.Context | null>();
 
   const onEnter = () => {
@@ -32,10 +40,14 @@ const Split = ({ children, splitChildren, ...props }: ISplitProps) => {
 
   return (
     <S.SplitContent
-      {...props}
+      fontSize={fontSize}
+      contentsize={contentsize || '3rem'}
+      color={color}
+      weight={weight}
       ref={splitElementRef}
       onMouseEnter={onEnter}
       onMouseLeave={onLeave}
+      {...props}
     >
       <S.SplitChildren>{children}</S.SplitChildren>
       <S.SplitChildren>{splitChildren}</S.SplitChildren>
