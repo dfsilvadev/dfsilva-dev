@@ -32,6 +32,7 @@ const GlobalStyles = createGlobalStyle`
       font-family: ${theme.font.family};
       text-align: left;
       overflow-x: hidden;
+      cursor: none;
     }
     h1,
     h2,
@@ -63,6 +64,7 @@ const GlobalStyles = createGlobalStyle`
     a {
       text-decoration: none;
       color: inherit;
+      cursor: none;
     }
     a,
     p {

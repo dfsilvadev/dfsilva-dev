@@ -1,10 +1,11 @@
 'use client';
 
-import { AboutMe, Hero, Works } from '@/components';
+import { AboutMe, Cursor, Hero, Works } from '@/components';
 
 export default function Home() {
   return (
     <main>
+      <Cursor />
       <Hero />
       <AboutMe />
       <Works />
