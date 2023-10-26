@@ -46,15 +46,15 @@ export const viewAllCursorAnimation = (
       .to(cursorRef.current, {
         mixBlendMode: 'normal'
       })
-      .to(polygonCursorRef.current, {
-        scale: 0,
-        opacity: 0,
-        display: 'none'
-      })
       .to(viewAllCursorRef.current, {
         scale: 1,
         opacity: 1,
         display: 'flex'
+      })
+      .to(polygonCursorRef.current, {
+        scale: 0,
+        opacity: 0,
+        display: 'none'
       });
     self.add('onEnter', () => {
       tl.play();
