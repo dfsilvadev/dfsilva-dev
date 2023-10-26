@@ -9,4 +9,5 @@ export { default as Split } from './Split';
 export { default as Status } from './Status';
 export { default as Technology } from './Technology';
 export { default as Text } from './Text';
+export { default as Work } from './Work';
 export { default as Works } from './Works';

@@ -9,8 +9,8 @@ const Technology = ({ label }: ITechnologyProps) => {
     <S.TechnologyContent>
       <Split
         splitChildren={label}
-        fontSize="1.4rem"
-        contentsize="2.2rem"
+        fontSize="1.2rem"
+        contentsize="1.8rem"
         color="gray200"
         weight={500}
       >
