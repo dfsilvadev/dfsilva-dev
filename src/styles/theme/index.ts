@@ -36,11 +36,11 @@ const defaultTheme = {
       main: '#040506'
     },
     text: {
-      heading: '#1C1B20',
+      heading: '#23292e',
       main: '#606060'
     },
     primary: {
-      main: '#7A4FEE',
+      main: '#524BF2',
       dark: '#040506'
     },
     purple: {
@@ -61,7 +61,7 @@ const defaultTheme = {
     gradient: {
       base: 'rgb(207,235,255)',
       linear:
-        'linear-gradient(90deg, rgba(151,71,255,1) 5%, rgba(255,153,189,1) 30%, rgba(207,235,255,1) 100%);'
+        'linear-gradient(90deg, rgba(82,75,242,1) 5%, rgba(221,81,131,1) 30%, rgba(207,235,255,1) 100%);'
     }
   },
   layers: {

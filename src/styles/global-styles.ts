@@ -66,7 +66,6 @@ const GlobalStyles = createGlobalStyle`
       color: inherit;
       cursor: none;
     }
-    a,
     p {
       font-size: ${theme.font.sizes.small};
     }
@@ -76,6 +75,20 @@ const GlobalStyles = createGlobalStyle`
     [disabled] {
       opacity: 0.6;
       cursor: not-allowed;
+    }
+
+    ::-webkit-scrollbar {
+      width: 7px !important;
+    }
+    ::-webkit-scrollbar-track {
+      background: ${theme.colors.gray[50]} !important;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: ${theme.colors.primary.main} !important;
+      border-radius: 50px !important;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: ${theme.colors.gradient} !important;
     }
   `}
 `;
