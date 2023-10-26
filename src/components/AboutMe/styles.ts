@@ -32,13 +32,9 @@ export const LastColumn = styled(FlexComponent)`
   ${({ theme }) => css`
     border-top: 1px solid ${theme.colors.gray[100]};
 
-    a {
-      display: inline-block;
-      width: 100%;
-    }
-
     strong {
       color: ${theme.colors.primary.main};
+      text-decoration: underline;
     }
 
     @media (min-width: 992px) {

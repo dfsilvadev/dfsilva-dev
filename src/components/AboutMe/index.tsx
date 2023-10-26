@@ -41,7 +41,27 @@ const AboutMe = () => {
               Olá, meu nome é Daniel Silva e moro em São Paulo - SP. Meu
               trabalho gira em torno da criação de experiências interativas
               únicas com tecnologia baseada em navegador. Atualmente desenvolvo
-              em <strong>React / Next.</strong>
+              em{' '}
+              <strong>
+                <Link
+                  href="https://react.dev/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  React
+                </Link>
+              </strong>{' '}
+              /{' '}
+              <strong>
+                <Link
+                  href="https://nextjs.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Next
+                </Link>
+              </strong>
+              .
             </Text>
 
             <Text as="p">
@@ -52,7 +72,17 @@ const AboutMe = () => {
 
             <Text as="p">
               Desenvolver tornou-se um hobby favorito e atualmente pratico esse
-              hobby no <strong>Grupo Boticário</strong>.
+              hobby no{' '}
+              <strong>
+                <Link
+                  href="https://www.grupoboticario.com.br/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Grupo Boticário
+                </Link>
+              </strong>
+              .
             </Text>
 
             <Text as="p">
@@ -62,7 +92,16 @@ const AboutMe = () => {
           </Flex>
         </S.AboutMeInfo>
 
-        <Link href={SOCIAL_URL.EMAIL} target="_blank" rel="noopener noreferrer">
+        <Link
+          href={SOCIAL_URL.EMAIL}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{
+            display: 'inline-block',
+            width: '100%',
+            height: '20rem'
+          }}
+        >
           <Box
             splitChildren="Vamos Conversar?"
             verticalAlign="center"
