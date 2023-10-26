@@ -9,6 +9,7 @@ import { BorderType } from './types';
 export const BoxContent = styled(FlexComponent)<BorderType>`
   ${({ theme, borderbat, borderlar, padding }) => css`
     width: 100%;
+    height: 100%;
     padding: ${padding};
     color: ${theme.colors.gray[200]};
     border: 1px solid transparent;

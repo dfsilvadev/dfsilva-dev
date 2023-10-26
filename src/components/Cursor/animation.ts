@@ -3,7 +3,9 @@ import gsap from 'gsap';
 
 import { DefaultTheme } from '@/styles';
 
-export const cursorMouseAnimation = (cursorRef: RefObject<HTMLDivElement>) => {
+export const cursorMouseAnimation = (
+  polygonCursorRef: RefObject<HTMLDivElement>
+) => {
   return gsap.context((self) => {
     const tl = gsap
       .timeline({
@@ -13,9 +15,46 @@ export const cursorMouseAnimation = (cursorRef: RefObject<HTMLDivElement>) => {
           duration: 0.4
         }
       })
-      .to(cursorRef.current, {
-        scale: 1.5,
+      .to(polygonCursorRef.current, {
+        scale: 2,
         borderColor: DefaultTheme.colors.primary.main
+      });
+    self.add('onEnter', () => {
+      tl.play();
+    });
+
+    self.add('onLeave', () => {
+      tl.reverse();
+    });
+  });
+};
+
+export const viewAllCursorAnimation = (
+  viewAllCursorRef: RefObject<HTMLDivElement>,
+  polygonCursorRef: RefObject<HTMLDivElement>,
+  cursorRef: RefObject<HTMLDivElement>
+) => {
+  return gsap.context((self) => {
+    const tl = gsap
+      .timeline({
+        paused: true,
+        defaults: {
+          ease: 'power1.easeInOut',
+          duration: 0.15
+        }
+      })
+      .to(cursorRef.current, {
+        mixBlendMode: 'normal'
+      })
+      .to(polygonCursorRef.current, {
+        scale: 0,
+        opacity: 0,
+        display: 'none'
+      })
+      .to(viewAllCursorRef.current, {
+        scale: 1,
+        opacity: 1,
+        display: 'flex'
       });
     self.add('onEnter', () => {
       tl.play();
