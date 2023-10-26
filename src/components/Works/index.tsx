@@ -1,4 +1,4 @@
-import { Text } from '@/components';
+import { Flex, Text } from '@/components';
 
 import * as S from './styles';
 
@@ -23,7 +23,19 @@ const Works = () => {
             top: 0,
             background: '#524bf2'
           }}
-        ></div>
+        >
+          <Flex
+            align="center"
+            justify="center"
+            style={{
+              width: '100%',
+              height: '100%',
+              color: 'white'
+            }}
+          >
+            Work I
+          </Flex>
+        </div>
         <div
           style={{
             width: '100%',
@@ -32,8 +44,21 @@ const Works = () => {
             top: 0,
             background: '#e00167'
           }}
-        ></div>
+        >
+          <Flex
+            align="center"
+            justify="center"
+            style={{
+              width: '100%',
+              height: '100%',
+              color: 'white'
+            }}
+          >
+            Work II
+          </Flex>
+        </div>
         <div
+          className="view-all-content"
           style={{
             width: '100%',
             height: '100vh',
@@ -41,7 +66,19 @@ const Works = () => {
             top: 0,
             background: '#23292e'
           }}
-        ></div>
+        >
+          <Flex
+            align="center"
+            justify="center"
+            style={{
+              width: '100%',
+              height: '100%',
+              color: 'white'
+            }}
+          >
+            Work III
+          </Flex>
+        </div>
       </S.LastColumn>
     </S.WorksContent>
   );
