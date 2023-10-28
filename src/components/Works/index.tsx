@@ -17,6 +17,7 @@ const Works = () => {
       <S.LastColumn direction="column">
         <Work />
         <Work />
+        <Work />
       </S.LastColumn>
     </S.WorksContent>
   );
