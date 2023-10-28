@@ -1,6 +1,8 @@
 'use client';
 
-import { AboutMe, Cursor, Hero, Works } from '@/components';
+import { ArrowCircleRight } from 'phosphor-react';
+
+import { AboutMe, Box, Cursor, Flex, Hero, Works } from '@/components';
 
 export default function Home() {
   return (
@@ -9,6 +11,20 @@ export default function Home() {
       <Hero />
       <AboutMe />
       <Works />
+      <Flex
+        style={{
+          height: '20rem'
+        }}
+      >
+        <Box
+          splitChildren="Clique aqui para saber mais"
+          borderbat="bottom"
+          verticalAlign="center"
+          icon={<ArrowCircleRight size={24} />}
+        >
+          Gostou do que viu?
+        </Box>
+      </Flex>
 
       <div
         style={{

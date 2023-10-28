@@ -14,7 +14,7 @@ export const WorksContent = styled.div`
     grid-template-rows: auto 2fr;
 
     @media (min-width: 992px) {
-      grid-template-columns: 0.5fr 2fr;
+      grid-template-columns: 1fr 2fr;
       grid-template-rows: auto;
     }
   `}
@@ -36,16 +36,6 @@ export const FirstColumn = styled(FlexComponent)`
 export const LastColumn = styled(FlexComponent)`
   ${({ theme }) => css`
     border-top: 1px solid ${theme.colors.gray[100]};
-
-    a {
-      display: inline-block;
-      width: 100%;
-    }
-
-    strong {
-      color: ${theme.colors.primary.main};
-    }
-
     @media (min-width: 992px) {
       border-top: 1px solid transparent;
       border-left: 1px solid ${theme.colors.gray[100]};

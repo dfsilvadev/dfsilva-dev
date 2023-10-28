@@ -8,10 +8,11 @@ export const TextContent = styled.p.withConfig({
   shouldForwardProp: (props) =>
     !['weight'].includes(props) || !['weight'].includes(props)
 })<TextContentStyleProps>`
-  ${({ theme, size, weight, color }) => css`
+  ${({ theme, size, weight, color, texttransform }) => css`
     font-size: ${size};
     font-weight: ${weight};
     line-height: 1.2;
+    text-transform: ${!!texttransform && texttransform};
 
     ${!!color && textColorVariant[color](theme)}
   `}

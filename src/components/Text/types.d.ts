@@ -27,4 +27,5 @@ export type TextProps = {
     | '0.56em';
   weight?: number;
   color?: 'default' | 'heading' | 'white' | 'gray100' | 'gray200';
+  texttransform?: 'inherit' | 'uppercase';
 } & TextTypes;

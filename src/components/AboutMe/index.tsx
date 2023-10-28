@@ -11,8 +11,8 @@ const AboutMe = () => {
   return (
     <S.AboutMeContent>
       <S.FirstColumn>
-        <Text as="h3" size="4.8rem" color="heading">
-          Sobre mim
+        <Text as="h3" size="4.8rem" color="heading" texttransform="uppercase">
+          Sobre mim.
         </Text>
       </S.FirstColumn>
 

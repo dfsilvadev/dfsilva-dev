@@ -18,6 +18,7 @@ export const WorkContent = styled.div`
   justify-items: stretch;
 
   @media (min-width: 992px) {
+    height: 90vh;
     grid-auto-columns: 1fr;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr;
