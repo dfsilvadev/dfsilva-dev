@@ -17,12 +17,12 @@ export default function Home() {
         }}
       >
         <Box
-          splitChildren="Clique aqui para saber mais"
+          splitChildren="Projetos."
           borderbat="bottom"
           verticalAlign="center"
           icon={<ArrowCircleRight size={24} />}
         >
-          Gostou do que viu?
+          Ver mais
         </Box>
       </Flex>
 
