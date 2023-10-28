@@ -8,7 +8,14 @@ const Text: ForwardRefRenderFunction<
   RefObject<typeof S.TextContent>,
   TextProps
 > = (
-  { children, size = '1.8rem', weight = 300, color = 'default', ...props },
+  {
+    children,
+    size = '1.8rem',
+    weight = 300,
+    color = 'default',
+    texttransform = 'inherit',
+    ...props
+  },
   ref
 ) => {
   return (
@@ -16,6 +23,7 @@ const Text: ForwardRefRenderFunction<
       size={size}
       weight={weight}
       color={color}
+      texttransform={texttransform}
       ref={ref}
       {...props}
     >
