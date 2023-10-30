@@ -4,6 +4,8 @@ export { default as Box } from './Box';
 export { default as Cursor } from './Cursor';
 export { FlexComponent as Flex } from './Flex';
 export { default as Hero } from './Hero';
+export { default as HeroBoxWrapper } from './HeroBoxWrapper';
+export { default as MoveUp } from './MoveUp';
 export { default as SocialIcons } from './SocialIcons';
 export { default as Split } from './Split';
 export { default as Status } from './Status';
