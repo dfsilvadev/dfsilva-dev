@@ -6,7 +6,7 @@ import {
   TwitterLogo
 } from 'phosphor-react';
 
-import { Box } from '@/components';
+import { Box, MoveUp } from '@/components';
 
 import { SOCIAL_URL } from '@/utils/common/constant';
 
@@ -24,7 +24,9 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <GithubLogo size={24} />
+          <MoveUp>
+            <GithubLogo size={24} />
+          </MoveUp>
         </Box>
       </Link>
 
@@ -41,7 +43,9 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <InstagramLogo size={24} />
+          <MoveUp>
+            <InstagramLogo size={24} />
+          </MoveUp>
         </Box>
       </Link>
 
@@ -58,7 +62,9 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <LinkedinLogo size={24} />
+          <MoveUp>
+            <LinkedinLogo size={24} />
+          </MoveUp>
         </Box>
       </Link>
 
@@ -71,7 +77,9 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <TwitterLogo size={24} />
+          <MoveUp>
+            <TwitterLogo size={24} />
+          </MoveUp>
         </Box>
       </Link>
     </S.SocialIconsContentContent>
