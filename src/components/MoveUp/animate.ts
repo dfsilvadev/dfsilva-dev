@@ -1,9 +1,8 @@
 import { MutableRefObject } from 'react';
 import gsap from 'gsap';
 
-export const wordIntoAnimate = (
-  childSplit: SplitText,
-  logoRef: MutableRefObject<HTMLImageElement | null>
+export const moveUpAnimate = (
+  moveUpWrapperRef: MutableRefObject<HTMLSpanElement | null>
 ) => {
   return gsap.context((self) => {
     const tl = gsap
@@ -18,16 +17,12 @@ export const wordIntoAnimate = (
           }
         }
       })
-      .from(logoRef.current, {
-        opacity: 0,
-        duration: 1,
-        yPercent: 100
-      })
       .from(
-        childSplit.lines,
+        moveUpWrapperRef.current,
         {
           yPercent: 170,
-          skewY: 5
+          skewY: 5,
+          opacity: 0.0001
         },
         0.1
       );

@@ -2,13 +2,17 @@
 
 import styled from 'styled-components';
 
-export const WordAnimatedContent = styled.div`
-  position: relative;
+export const MoveUpContent = styled.span`
   width: fit-content;
-  vertical-align: middle;
   overflow: hidden;
 `;
 
-export const TextWrapper = styled.div`
-  /* opacity: 0.0001; */
+export const MoveUpWrapper = styled.span`
+  width: fit-content;
+  height: auto !important;
+
+  img {
+    margin: 0;
+    padding: 0;
+  }
 `;
