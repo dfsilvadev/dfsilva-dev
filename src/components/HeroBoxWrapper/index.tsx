@@ -13,16 +13,18 @@ const HeroBoxWrapper = () => {
         borderbat="top"
         borderlar="left"
         icon={
-          <Image
-            src="images/svg/icons/react_icon.svg"
-            alt="React logo"
-            width={24}
-            height={24}
-            priority
-          />
+          <MoveUp data-moveup="into">
+            <Image
+              src="images/svg/icons/react_icon.svg"
+              alt="React logo"
+              width={24}
+              height={24}
+              priority
+            />
+          </MoveUp>
         }
       >
-        <MoveUp data-wordanimated="into">React</MoveUp>
+        <MoveUp data-moveup="into">React</MoveUp>
       </Box>
 
       <Box
@@ -31,16 +33,18 @@ const HeroBoxWrapper = () => {
         borderbat="top"
         borderlar="left"
         icon={
-          <Image
-            src="images/svg/icons/next_icon.svg"
-            alt="Next logo"
-            width={24}
-            height={24}
-            priority
-          />
+          <MoveUp data-moveup="into">
+            <Image
+              src="images/svg/icons/next_icon.svg"
+              alt="Next logo"
+              width={24}
+              height={24}
+              priority
+            />
+          </MoveUp>
         }
       >
-        <MoveUp data-wordanimated="into">Next</MoveUp>
+        <MoveUp data-moveup="into">Next</MoveUp>
       </Box>
 
       <Box
@@ -49,16 +53,18 @@ const HeroBoxWrapper = () => {
         borderbat="top"
         borderlar="left"
         icon={
-          <Image
-            src="images/svg/icons/node_icon.svg"
-            alt="Node logo"
-            width={24}
-            height={24}
-            priority
-          />
+          <MoveUp data-moveup="into">
+            <Image
+              src="images/svg/icons/node_icon.svg"
+              alt="Node logo"
+              width={24}
+              height={24}
+              priority
+            />
+          </MoveUp>
         }
       >
-        <MoveUp data-wordanimated="into">Node</MoveUp>
+        <MoveUp data-moveup="into">Node</MoveUp>
       </Box>
 
       <SocialIcons />

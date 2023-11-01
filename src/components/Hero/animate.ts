@@ -1,9 +1,7 @@
-import { MutableRefObject } from 'react';
 import gsap from 'gsap';
 
-export const moveUpAnimate = (
-  moveUpWrapperRef: MutableRefObject<HTMLSpanElement | null>
-) => {
+export const moveUpAnimate = (moveUpContentList: NodeListOf<Element>) => {
+  const list = gsap.utils.toArray(moveUpContentList);
   return gsap.context((self) => {
     const tl = gsap
       .timeline({
@@ -13,15 +11,15 @@ export const moveUpAnimate = (
           duration: 1,
           delay: 0.3,
           stagger: {
-            amount: 0.15
+            amount: 0.6
           }
         }
       })
       .from(
-        moveUpWrapperRef.current,
+        list,
         {
           yPercent: 170,
-          skewY: 5,
+          skewY: 2,
           opacity: 0.0001
         },
         0.1
