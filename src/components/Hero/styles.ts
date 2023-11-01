@@ -8,7 +8,6 @@ export const HeroContent = styled.section`
   ${({ theme }) => css`
     width: 100vw;
     height: 100vh;
-    font-size: 10vw;
     border-bottom: 1px solid ${theme.colors.gray[100]};
     overflow: hidden;
 
@@ -34,7 +33,7 @@ export const FirstColumn = styled(FlexComponent)`
 
 export const HeroMessage = styled.h1`
   ${({ theme }) => css`
-    font-size: 1em;
+    font-size: 10vw;
     line-height: 90%;
 
     strong {
@@ -45,7 +44,7 @@ export const HeroMessage = styled.h1`
     }
 
     @media (min-width: 992px) {
-      font-size: ${theme.font.sizes.huge};
+      font-size: 6vw;
     }
   `}
 `;

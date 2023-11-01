@@ -24,7 +24,7 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <MoveUp>
+          <MoveUp data-moveup="into">
             <GithubLogo size={24} />
           </MoveUp>
         </Box>
@@ -43,7 +43,7 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <MoveUp>
+          <MoveUp data-moveup="into">
             <InstagramLogo size={24} />
           </MoveUp>
         </Box>
@@ -62,7 +62,7 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <MoveUp>
+          <MoveUp data-moveup="into">
             <LinkedinLogo size={24} />
           </MoveUp>
         </Box>
@@ -77,7 +77,7 @@ const SocialIcons = () => {
           borderbat="top"
           borderlar="left"
         >
-          <MoveUp>
+          <MoveUp data-moveup="into">
             <TwitterLogo size={24} />
           </MoveUp>
         </Box>
